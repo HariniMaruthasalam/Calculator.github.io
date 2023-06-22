@@ -16,17 +16,6 @@
             <div class="display-screen">
                 <div id="display"></div>
             </div>
-             <div class="time" id="time">
-                <script>
-                    var time = document.getElementById('time').innerHTML;
-                    var today = new Date();
-                    var time = today.getHours() + ":" + today.getMinutes();
-                    time = document.write(time);
-                </script>
-            </div>
-            <div class="battery">
-                <i class="fa fa-battery-full"></i>
-            </div>
             <div class="buttons">
                 <table>
                     <tr>
@@ -62,6 +51,30 @@
             </div>
         </div>
     </div>
+    <div id="time"></div>
+    <div id="battery"></div>
     <script src="script.js"></script>
+    <script>
+        // Update time
+        function updateTime() {
+            const now = new Date();
+            const timeElement = document.getElementById("time");
+            timeElement.textContent = now.toLocaleTimeString();
+        }
+
+        // Update battery life
+        function updateBattery() {
+            const batteryElement = document.getElementById("battery");
+            navigator.getBattery().then(function(battery) {
+                const level = battery.level * 100;
+                batteryElement.textContent = "Battery: " + level.toFixed(2) + "%";
+            });
+        }
+
+        // Update time and battery periodically
+        setInterval(updateTime, 1000);
+        setInterval(updateBattery, 60000); // Update every minute
+    </script>
 </body>
 </html>
+

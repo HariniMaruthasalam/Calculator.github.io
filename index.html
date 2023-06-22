@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Simple Calculator</title>
+    <title>Title</title>
 </head>
 <body>
     <div class="container">
@@ -51,30 +50,6 @@
             </div>
         </div>
     </div>
-    <div id="time"></div>
-    <div id="battery"></div>
     <script src="script.js"></script>
-    <script>
-        // Update time
-        function updateTime() {
-            const now = new Date();
-            const timeElement = document.getElementById("time");
-            timeElement.textContent = now.toLocaleTimeString();
-        }
-
-        // Update battery life
-        function updateBattery() {
-            const batteryElement = document.getElementById("battery");
-            navigator.getBattery().then(function(battery) {
-                const level = battery.level * 100;
-                batteryElement.textContent = "Battery: " + level.toFixed(2) + "%";
-            });
-        }
-
-        // Update time and battery periodically
-        setInterval(updateTime, 1000);
-        setInterval(updateBattery, 60000); // Update every minute
-    </script>
 </body>
 </html>
-

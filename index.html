@@ -7,7 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <title>Simple Calculator</title>
 </head>
-       <title><center>Simple Calculator</center></title>
+
+    <div class="time" id="time">
+                <script>
+                    var time = document.getElementById('time').innerHTML;
+                    var today = new Date();
+                    var time = today.getHours() + ":" + today.getMinutes();
+                    time = document.write(time);
+                </script>
+            </div>
+            <div class="battery">
+                <i class="fa fa-battery-full"></i>
+            </div>
 <body>
     <div class="container">
         <div class="calculator dark">

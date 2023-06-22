@@ -9,26 +9,25 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
+            height: 1000vh;
+            margin: 10;
             background-image: linear-gradient(to bottom right, rgba(79, 51, 176, 1.0), rgba(210, 53, 165));
         }
 .title-bar {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 400px;
-            height: 120px;
+            width: 600px;
+            height: 200px;
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
 .title {
-             font-size: 24px;
+            font-size: 24px;
             font-weight: bold;
             text-align: center;
-            line-height: 1.5;
+            line-height: 2.5;
         }
 
 body {

@@ -15,7 +15,7 @@ a {
     color: #fff;
 }
 body {
-    background-color: hsl(89, 43%, 51%);
+    background-image: linear-gradient(to bottom right, rgba(18, 92, 230, 1.0), rgba(49, 196, 190, 1.0));
 }
 
 .container {

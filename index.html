@@ -7,8 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <title>Simple Calculator</title>
 </head>
-
-    <div class="time" id="time">
+<body>
+    <div class="container">
+        <div class="calculator dark">
+            <div class="theme-toggler active">
+                <i class="toggler-icon"></i>
+            </div>
+            <div class="display-screen">
+                <div id="display"></div>
+            </div>
+             <div class="time" id="time">
                 <script>
                     var time = document.getElementById('time').innerHTML;
                     var today = new Date();
@@ -18,15 +26,6 @@
             </div>
             <div class="battery">
                 <i class="fa fa-battery-full"></i>
-            </div>
-<body>
-    <div class="container">
-        <div class="calculator dark">
-            <div class="theme-toggler active">
-                <i class="toggler-icon"></i>
-            </div>
-            <div class="display-screen">
-                <div id="display"></div>
             </div>
             <div class="buttons">
                 <table>

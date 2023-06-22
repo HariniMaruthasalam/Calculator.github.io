@@ -5,28 +5,29 @@
     outline: 0;
     transition: all 0.5s ease;
 }
- body {
+body {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: flex-start;
             align-items: center;
-            height: 1000vh;
+            min-height: 100vh;
             margin: 0;
             background-image: linear-gradient(to bottom right, rgba(79, 51, 176, 1.0), rgba(210, 53, 165));
         }
+
 .title-bar {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 400px;
-            height: 145px;
-            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            padding: 20px;
         }
 
 .title {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
             text-align: center;
-            line-height: 1:5;
+            line-height: 1.5;
         }
 
 body {
